@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorcss.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.2.1/math.js" integrity="sha512-ekTDuSaAE9sFxbDUSIgOT0OK+iInxoziYIA03oVHFWC7edmuSwngpR/FTu7ome+sfcZgFePphvGDkRTav62lMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator-calculate">
+            <div class="calculator-calculate-screen js-output" >0</div>
+        </div>
+        <div class="calculator-buttons">
+            <button class="calculator-button " onclick="getButton(7)">7</button>
+            <button class="calculator-button " onclick="getButton(8)">8</button>
+            <button class="calculator-button " onclick="getButton(9)">9</button>
+            <button class="calculator-button operator" onclick="getButton(`/`)">/</button>
+            <button class="calculator-button " onclick="getButton(4)">4</button>
+            <button class="calculator-button " onclick="getButton(5)">5</button>
+            <button class="calculator-button " onclick="getButton(6)">6</button>
+            <button class="calculator-button operator" onclick="getButton(`*`)">x</button>
+            <button class="calculator-button " onclick="getButton(1)">1</button>
+            <button class="calculator-button " onclick="getButton(2)">2</button>
+            <button class="calculator-button " onclick="getButton(3)">3</button>
+            <button class="calculator-button operator" onclick="getButton(`-`)">-</button>
+            <button class="calculator-button " onclick="getButton(0)">0</button>
+            <button class="calculator-button reset-button" onclick="reset()">C</button>
+            <button class="calculator-button " onclick="equalTo()">=</button>
+            <button class="calculator-button operator" onclick="getButton(`+`)">+</button>             
+        </div>
+    </div>
+    <script src="calculatorjs.js"></script>
+</body>
+
+</html>

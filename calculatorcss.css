@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the full height of the viewport is covered */
+  }
+  
+
+.calculator{
+    height:560px;
+    width:340px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(56, 56, 56);
+}
+
+.calculator-calculate{
+    height:100px;
+    border:1px solid black;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    position: relative;
+    margin-bottom:90px;
+    margin-top:20px;
+    background-color: rgb(154, 154, 154);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transform: perspective(1000px) rotateX(0deg);
+
+}
+
+.calculator-calculate-screen{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px; 
+    color: #1f1f1f;
+    font-size:24px;
+    font-weight: bold;
+    overflow: hidden; /* Hide the overflowing content */
+    white-space: nowrap; /* Prevent line breaks */
+    text-overflow: ellipsis; /* Show an ellipsis (...) when content overflows */
+    max-width: calc(100% - 20px); /* Limit the maximum width */
+}
+
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap:20px;
+    row-gap:20px;
+}
+
+.calculator-button{
+    height:60px;
+    width:70px;
+    border-radius:10px  ;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: 1px solid #45a049;
+    box-shadow: 0 4px 8px rgba(171, 171, 171, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.calculator-button:hover {
+    box-shadow: 0 12px 24px rgba(207, 207, 207, 0.3);
+    cursor:pointer;
+}
+
+.calculator-button:active {
+    box-shadow: 0 12px 24px rgba(207, 207, 207, 0.3);
+    background-color: #3d893f;
+}
+
+.operator{
+    background-color: rgb(192, 136, 14);
+    border: 1px solid rgb(192, 136, 14);
+}
+
+.operator:active{
+    background-color: rgb(126, 88, 8);
+}
+
+.reset-button{
+    background-color: rgb(179, 4, 4);
+    border: 1px solid rgb(179, 4, 4);
+}
+
+.reset-button:active{
+    background-color: rgb(104, 4, 4);
+}
+
